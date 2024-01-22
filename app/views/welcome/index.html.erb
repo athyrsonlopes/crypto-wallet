@@ -1,11 +1,7 @@
 <h1>Seja Bem-Vindo!</h1>
 <p><strong>Data:</strong><%= date_br(Date.today) %></p>
 <p><%= name_application %></p>
-<ul>
-  <li>
-    <%= link_to "Cadastro de Moedas", coins_path %>
-  </li>
-</ul>
+<%= render "menu" %>
 
 <p>
   Meu nome é <strong><%= @meu_nome %></strong></p>
